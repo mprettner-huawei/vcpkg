@@ -85,3 +85,13 @@ index 8c8ac50..122e087 100644
 -#endif
 -
  #endif
+diff --git a/conf/check_thread_storage.c b/conf/check_thread_storage.c
+index e6e1e98..ed5510f 100644
+--- a/conf/check_thread_storage.c
++++ b/conf/check_thread_storage.c
+@@ -1,4 +1,4 @@
+-extern __thread int x;
++extern __declspec(thread) int x;
+ 
+ int main(int argc, char **argv) {
+   return 0;
